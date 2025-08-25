@@ -15,21 +15,24 @@
 #### 3. git reset --hard `<commit的四位>`
 >找回的话使用**git reflog`(查看head改动日志)`**,然后在**git reset --hard \<commit>**
 
-![命令图片](/pictures/1.png)
+![git哥哥区域命令图片](/pictures/1.png)
 
 #### 4. git diff HEAD -- \<filename> 
 >查看远程仓库跟本地仓库修改文件的区别
-
+![手动解决冲突](/pictures/屏幕截图%202025-08-25%20214202.png)
+![alt text](/pictures/image.png)
+---
 ### （二. 分支）
 #### git branch 
 >看本地分支
-#### git branch -r:
+#### git branch -r
 >看远程跟踪分支。
-#### git branch -a:
+#### git branch -a
 >看所有（本地和远程跟踪）分支。
 #### git branch -vv
 > 看本地分支的详细信息（最新提交、上游分支、同步状态）。
 #### git checkout -b <branchname>
+>两个命令`git branchh`和`git checkout`的合体
 >创建并切换分支
 #### git checkout <branchname>
 >切换分支
@@ -37,3 +40,9 @@
 >删除分支
 #### git push origin <filename>:main
 >指定本地分支推送到远程仓库
+1. git checkout -b sortdev
+2. git add .
+3. git commit -m" "
+4. git merge sortdev
+>合并到main上
+>或则使用**git push origin sortdev:main**在**git pull**更新main
