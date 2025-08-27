@@ -1,11 +1,11 @@
-**git init**
-**git remote -v**
-**git remote add xx https://**
-**git remote -v**
-**git checkout master**
-**git add .**
-**git commit -m" "**
-**git push xx master**
+**git init**  
+**git remote -v**  
+**git remote add xx https://**  
+**git remote -v**  
+**git checkout master**  
+**git add .**  
+**git commit -m" "**  
+**git push xx master**  
 
 ### （一）
 #### 1. git checkout -- \<filename>
@@ -22,7 +22,7 @@
 ![手动解决冲突](/pictures/屏幕截图%202025-08-25%20214202.png)
 ![alt text](/pictures/image.png)
 ---
-### （二. 分支）
+### (二) 分支
 #### git branch 
 >看本地分支
 #### git branch -r
@@ -46,3 +46,7 @@
 4. git merge sortdev
 >合并到main上
 >或则使用**git push origin sortdev:main**在**git pull**更新main
+---
+### (三)远程分支
+#### git checkout -b dev origin/dev
+>创建本地分支**dev**并追踪**远程分支dev**上
